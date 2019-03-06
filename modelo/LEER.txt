@@ -1,0 +1,40 @@
+COMPAÑEROS, HE OPTIMIZADO UN POCO LA CARPETA MODELO. 
+DEBEIS CAMBIAR EN VUESTRO PARTE "conexiones.php" POR "bd_mysql.php" Y "modelo.php" ADAPTANDO TAMBIEN VUESTRO CÓDIGO.
+ESTÁN HECHAS TODAS LAS SELECTS, UPDATES, DELETES E INSERTS PARA QUE LAS PODAIS UTILIZAR DIRECTAMENTE SIN PROBLEMAS.
+
+DEJO CODIGO DE EJEMPLO PARA QUE SEPAIS COMO HACERLO:
+    include_once "modelo/bd_mysql.php";
+    include_once "modelo/modelo.php";
+    $biblioteca = new Biblioteca();
+
+    $mensaje = $biblioteca->insertUsuario('Usuario1','$15$bQSkfXWNJHHzbsOawngKnOHvxpgzAf.f37IhxThqKvaVBcoQJXcY6','hola@hola.com');
+    $mensaje = $biblioteca->updateUsuario(1,'OtroUsuario,'$15$bQSkfXWNJHHzbsOawngKnOHvxpgzAf.f37IhxThqKvaVBcoQJXcY6','adios@adios.com');
+    $mensaje = $biblioteca->deleteUsuario(1);
+
+    echo $mensaje;
+
+    $consulta = $biblioteca->selectUsuarios();
+
+    <table>
+            <tr>
+                    <th> NOMBRE </th>
+                    <th> PASSWORD </th>
+                    <th> EMAIL </th>
+                    <th> </th>
+            </tr>
+        <?php
+        foreach ($consulta as $row) {
+        ?>	
+            <tr>
+                <td> <?php echo $row["nombre"]; ?> </td>
+                <td> <?php echo $row["password"]; ?> </td>
+                <td> <?php echo $row["email"]; ?> </td>
+                <td>
+                </td>
+            </tr>
+        <?php
+        }
+        ?>
+    </table>
+
+
