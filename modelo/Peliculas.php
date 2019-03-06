@@ -1,6 +1,6 @@
 <?php
 
-include 'conexion.php';
+include_once 'conexion.php';
 
 class Peliculas {
 
@@ -29,6 +29,7 @@ class Peliculas {
             $puntero--;
             echo"</tr>";
         }
+        echo "</table>";
 
         $db->close();
     }
