@@ -28,4 +28,4 @@ CREATE TABLE usuarios (
   password varchar(200) NOT NULL,
   email varchar(40) NOT NULL,
   PRIMARY KEY (`id`)
-) 
+);
