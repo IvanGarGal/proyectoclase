@@ -19,10 +19,10 @@ DEJO CODIGO DE EJEMPLO PARA QUE SEPAIS COMO HACER LAS CONSULTAS :
 
     <table>
             <tr>
-                    <th> NOMBRE </th>
-                    <th> PASSWORD </th>
-                    <th> EMAIL </th>
-                    <th> </th>
+                <th> NOMBRE </th>
+                <th> PASSWORD </th>
+                <th> EMAIL </th>
+                <th> </th>
             </tr>
         <?php
         foreach ($consulta as $row) {
