@@ -1,2 +1,0 @@
-# proyectoclase
-Proyecto
