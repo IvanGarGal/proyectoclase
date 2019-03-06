@@ -9,7 +9,7 @@ CREATE TABLE cds (
 CREATE TABLE libros (
   id int(11) NOT NULL AUTO_INCREMENT,
   nombre varchar(40) NOT NULL,
-  descripcion varchar(40) NOT NULL,
+  descripcion varchar(100) NOT NULL,
   existencias int(11) NOT NULL,
   PRIMARY KEY (id)
 );
