@@ -23,6 +23,7 @@ and open the template in the editor.
         include 'modelo/Peliculas.php';
         include 'modelo/Cds.php';
         include 'modelo/Usuarios.php';
+        include 'modelo/Libros.php';
 
         if (isset($_POST['opcion'])) {
 
@@ -31,7 +32,8 @@ and open the template in the editor.
             switch ($opcion) {
                 case "libros":
 
-
+                    consultaLibros();
+                    
                     break;
                 case "cds":
 
