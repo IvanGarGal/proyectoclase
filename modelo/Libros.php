@@ -7,7 +7,6 @@ function consultaLibros() {
     $obj = new conectaBD();
     $db = $obj->getConn();
 
-
     $consulta = "select * from libros";
 
     $resultado = $db->query($consulta);

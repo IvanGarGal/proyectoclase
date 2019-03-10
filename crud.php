@@ -26,7 +26,6 @@ and open the template in the editor.
         include 'modelo/Libros.php';
 
         if (isset($_POST['opcion'])) {
-
             $opcion = $_POST['opcion'];
 
             switch ($opcion) {
