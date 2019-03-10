@@ -7,7 +7,6 @@ function consultaUsuarios() {
     $obj = new conectaBD();
     $db = $obj->getConn();
 
-
     $consulta = "select * from usuarios";
 
     $resultado = $db->query($consulta);

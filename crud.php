@@ -19,7 +19,6 @@ and open the template in the editor.
         </style>
     </head>
     <body>
-
         <?php
         include 'modelo/Peliculas.php';
         include 'modelo/Cds.php';
@@ -56,7 +55,6 @@ and open the template in the editor.
             }
         }
         ?>
-
         <form  method="post" action="crud.php">
             <input type="submit" name="opcion" value="libros">
             <input type="submit" name="opcion" value="cds">
