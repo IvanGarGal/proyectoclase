@@ -23,6 +23,7 @@ and open the template in the editor.
         <?php
         include 'modelo/Peliculas.php';
         include 'modelo/Cds.php';
+        include 'modelo/Usuarios.php';
 
         if (isset($_POST['opcion'])) {
 
@@ -44,6 +45,12 @@ and open the template in the editor.
                     consultaPelis();
 
                     break;
+                
+                case "usuarios":
+
+                    consultaUsuarios();
+
+                    break;
                 default:
                     break;
             }
@@ -54,6 +61,7 @@ and open the template in the editor.
             <input type="submit" name="opcion" value="libros">
             <input type="submit" name="opcion" value="cds">
             <input type="submit" name="opcion" value="peliculas">
+            <input type="submit" name="opcion" value="usuarios">
         </form>
     </body>
 </html>
